@@ -432,7 +432,7 @@ st.markdown(
 st.markdown(
     """
     <div class="subtitle">
-        Explore vocabulary, structure, patterns and similarity in English texts.
+        Explore vocabulary, structure, lemmas and lexical diversity.
         <br>
         ✦ A small NLP playground for curious minds ✦
     </div>
