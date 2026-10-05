@@ -432,8 +432,6 @@ st.markdown(
 st.markdown(
     """
     <div class="subtitle">
-        Explore vocabulary, structure, lemmas and lexical diversity.
-        <br>
         ✦ A small NLP playground for curious minds ✦
     </div>
     """,
@@ -454,8 +452,7 @@ with intro_cols[0]:
             <div class="intro-icon">♡</div>
             <div class="intro-title">Analyze text</div>
             <div class="intro-text">
-                Explore vocabulary, sentence structure, lemmas,
-                lexical diversity and basic linguistic statistics.
+                Explore vocabulary, structure, lemmas and lexical diversity.
             </div>
         </div>
         """,
