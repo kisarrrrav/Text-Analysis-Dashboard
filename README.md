@@ -10,9 +10,9 @@ A small NLP playground for curious minds: paste an English text, get linguistic 
 ![Streamlit](https://img.shields.io/badge/built%20with-Streamlit-FF4B4B)
 ![spaCy](https://img.shields.io/badge/NLP-spaCy-09A3D5)
 
-<!-- Add a screenshot or GIF of the app here:
-![Text Analysis Studio screenshot](docs/screenshot.png)
--->
+<img width="1920" height="866" alt="Screenshot 2026-10-17 091520" src="https://github.com/user-attachments/assets/6076deac-8d12-4eb0-8e3b-f2f7337cec03" />
+<img width="1920" height="868" alt="Screenshot 2026-10-17 091537" src="https://github.com/user-attachments/assets/36446d05-3b8e-4209-853c-edd381d25903" />
+<img width="1920" height="872" alt="Screenshot 2026-10-17 091547" src="https://github.com/user-attachments/assets/e8dec043-ef12-4fdd-a0ca-34954ed8538f" />
 
 ## Features
 
