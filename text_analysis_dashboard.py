@@ -526,6 +526,11 @@ single_text = st.text_area(
     key="single_text"
 )
 
+exclude_stop_words = st.checkbox(
+    "Exclude stop words (the, of, and...) from frequency lists",
+    value=True
+)
+
 single_button = st.columns([1, 1, 1])
 
 with single_button[2]:
@@ -569,9 +574,28 @@ if analyze_clicked:
             else 0
         )
 
-        word_counter = Counter(words)
+        if exclude_stop_words:
+            counted_tokens = [
+                token
+                for token in doc
+                if token.is_alpha and not token.is_stop
+            ]
+        else:
+            counted_tokens = [
+                token
+                for token in doc
+                if token.is_alpha
+            ]
 
-        lemma_counter = Counter(lemmas)
+        word_counter = Counter(
+            token.text.lower()
+            for token in counted_tokens
+        )
+
+        lemma_counter = Counter(
+            token.lemma_.lower()
+            for token in counted_tokens
+        )
 
         avg_sentence_length = (
             len(words) / len(sentences)
@@ -913,7 +937,7 @@ if compare_clicked:
             words = {
                 token.lemma_.lower()
                 for token in doc
-                if token.is_alpha
+                if token.is_alpha and not token.is_stop
             }
 
             word_sets.append(words)
