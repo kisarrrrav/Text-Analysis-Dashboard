@@ -102,7 +102,6 @@ Text-Analysis-Dashboard/
 
 ## Roadmap ideas
 
-- Stop-word filtering option
 - Support for more languages
 - Upload `.txt` / `.csv` files
 - Export results to CSV
